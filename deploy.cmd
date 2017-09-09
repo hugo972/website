@@ -1,4 +1,4 @@
-set NPM_CMD=D:\Program Files (x86)\nodejs\6.2.2\node.exe
+set NPM_CMD=D:\Program Files (x86)\npm\3.9.5\npm.exe
 
 "%NPM_CMD%" install
 grunt
