@@ -27,4 +27,4 @@ export class Server {
     }
 }
 
-Server.start(8080);
+Server.start(80);
