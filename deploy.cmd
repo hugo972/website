@@ -90,11 +90,13 @@ echo Handling node.js deployment.
 
 :: 2. Select node version
 call :SelectNodeVersion
+echo %NPM_CMD%
+echo %NODE_EXE%
 
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd !NPM_CMD! install --production
+  call :ExecuteCmd !NPM_CMD! install
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
