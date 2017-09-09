@@ -3,5 +3,5 @@ set PATH=D:\Program Files (x86)\node\6.2.2;D:\Program Files (x86)\npm\3.9.5;%PAT
 
 call npm install
 call grunt
-call robocopy node_modules\ ..\wwwroot\ /E
-call robocopy bin\ ..\wwwroot\ /E
+call robocopy node_modules\ ..\wwwroot\ /E /NP
+call robocopy bin\ ..\wwwroot\ /E /NP
