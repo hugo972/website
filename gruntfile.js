@@ -14,12 +14,18 @@ module.exports = function (grunt) {
                         expand: true,
                         flatten: true,
                         src: [
-                            "./node_modules/core-js/client/shim.min.js", 
-                            "./node_modules/systemjs/dist/system.js", 
+                            "./node_modules/core-js/client/shim.min.js",
+                            "./node_modules/systemjs/dist/system.js",
                             "./node_modules/zone.js/dist/zone.min.js",
                             "./client/app/system.config.js"
                         ],
                         dest: "./bin/client/"
+                    },
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: ["./web.config"],
+                        dest: "./bin/"
                     }
                 ]
             }
