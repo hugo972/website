@@ -5,7 +5,7 @@ import * as path from "path";
 export class Server {
     public app: express.Application;
 
-    public static start(port: number) {
+    public static start(port: number|string) {
         const server = new Server();
         const httpServer = http.createServer(server.app);
         httpServer.listen(port);
@@ -27,4 +27,4 @@ export class Server {
     }
 }
 
-Server.start(80);
+Server.start(process.env.PORT || 8080);
