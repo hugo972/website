@@ -4,6 +4,6 @@ set PATH=D:\Program Files (x86)\nodejs\6.2.2;D:\Program Files (x86)\npm\3.9.5;%P
 call npm install
 call grunt
 call robocopy bin\ ..\wwwroot\ /E /NFL /NJH /NJS /nc /ns /np
-call robocopy node_modules\ ..\wwwroot\node_modules\ /E /NFL /NJH /NJS /nc /ns /np
+call npm install --prefix ../wwwroot/
 
 endlocal
